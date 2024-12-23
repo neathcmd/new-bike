@@ -8,7 +8,7 @@
 }
 
 /* Body Styling */
-body.bg-light {
+body {
   background-color: #e5e5e5;
   font-family: "Work Sans", serif;
 }
@@ -26,7 +26,6 @@ body.bg-light {
   align-items: center;
   justify-content: space-between;
   padding: 20px 75px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 /* logo */
 .logo img {
@@ -65,6 +64,15 @@ body.bg-light {
 
 .cart-button:hover {
   background-color: #e0a800;
+}
+
+.bike-content {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  width: 300px;
+  /* border: 2px solid #e0a800; */
 }
 
 /* e-bike Section Styling */
@@ -197,30 +205,147 @@ body.bg-light {
   text-align: center;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-  }
+.img-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid #0056b3; */
+  padding: 10px 20px;
+  gap: 140px;
+}
 
-  .nav-list {
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 15px;
-  }
+.img-logo img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
 
-  .e-bike {
-    height: auto;
-    padding: 50px 20px;
-  }
+.ebike {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px 20px;
+  gap: 100px;
+  margin-left: 10px;
+  /* border: 2px solid #000; */
+}
 
-  .text-content h1 {
-    font-size: 2.5rem;
-  }
+.g-e-bike {
+  height: 65vh;
+}
 
-  .text-content p {
-    font-size: 1rem;
-  }
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 300px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.info {
+  margin-left: 20px;
+  width: 220px;
+}
+
+.info img {
+  margin-bottom: 10px;
+}
+
+.subscribe {
+  margin-top: 10px;
+}
+
+.subscribe input {
+  padding: 8px;
+  width: 100px;
+  margin-right: 5px;
+  border: 1px solid #000;
+}
+
+.subscribe button {
+  padding: 8px 15px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.subscribe button:hover {
+  border: 2px solid #000;
+  background: transparent;
+  color: #000;
+  transition: 0.4s ease;
+}
+
+.info-title {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.social-icons i {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #020000;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.visa-payment {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.visa-payment label {
+  font-weight: bold;
+}
+
+.visa-payment input[type="text"] {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.visa-payment button {
+  padding: 0.5em 1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.visa-payment button:hover {
+  background-color: #0056b3;
+}
+
+.checklist {
+  margin-top: 1em;
+}
+
+.checklist ul {
+  list-style: none;
+  padding: 0;
+}
+
+.checklist li {
+  margin: 0.5em 0;
+  display: flex;
+  align-items: center;
+}
+
+.checklist input[type="checkbox"] {
+  margin-right: 0.5em;
 }
